@@ -1,206 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Aranshika Kar | Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Aranshika Kar, portfolio, developer, data enthusiast, big data analytics" />
+  <meta name="description"
+    content="Welcome to Aranshika Kar's Portfolio. Developer, Data Enthusiast & Big Data Analytics Specialization." />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Aranshika Kar | Portfolio</title>
 </head>
-<body>
 
-<nav>
-  <div class="nav-logo">AK</div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#certifications">Certs</a></li>
-    <li><a href="#experience">Training</a></li>
-    <li><a href="#achievements">Achievements</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
-</nav>
+<body oncontextmenu="return false">
 
-<section id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-lines"></div>
-  <div class="hero-wrapper">
-    <div class="hero-content">
-      <div class="hero-tag">Computer Science &amp; Engineering</div>
-      <h1 class="hero-name">Aranshika<br/><span>Kar</span></h1>
-      <p class="hero-sub">Developer · Data Enthusiast · Big Data Analytics Specialization</p>
-      <p class="hero-summary">B.Tech student at Lovely Professional University, passionate about building impactful web solutions, data-driven dashboards, and solving complex algorithmic problems. Always learning, always building.</p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="#contact" class="btn-outline">Get In Touch</a>
-        <a href="CV.pdf" download class="btn-outline">Download CV</a>
+  <!-- Navbar -->
+  <header>
+    <a href="/" class="logo">AK</a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="CV.pdf" download style="color:#ff7b00;"><i class="fas fa-download"></i> CV</a></li>
+        <li><i class="fas fa-moon" id="theme-toggle"
+            style="cursor: pointer; font-size: 2rem; margin-left: 2rem; color: #011aff; transition: 0.3s;"
+            title="Toggle Dark Mode"></i></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="home" id="home">
+    <div id="particles-js"></div>
+    <div class="content">
+      <h2>Hello,<br> I'm Aranshika <br><span>Kar</span></h2>
+      <p>I am into <span class="typing-text"></span></p>
+      <a href="#about" class="btn"><span>About Me</span> <i class="fas fa-arrow-circle-down"></i></a>
+      <div class="socials">
+        <ul class="social-icons" style="display:flex; gap:10px;">
+          <li><a class="linkedin" href="https://www.linkedin.com/in/aranshika-kar" target="_blank"><i
+                class="fab fa-linkedin"></i></a></li>
+          <li><a class="github" href="https://github.com/aranshikakar" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+          <li><a class="dev" href="mailto:kararanshika@gmail.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
       </div>
     </div>
-    <div class="hero-image">
-      <img src="image.jpeg" alt="Aranshika Kar Profile Picture"/>
+    <div class="image">
+      <img draggable="false" class="tilt" src="image.jpeg" alt="Hero Image">
     </div>
-  </div>
-  <div class="hero-social">
-    <a href="https://github.com/aranshikakar" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/aranshika-kar" target="_blank">LinkedIn</a>
-  </div>
-</section>
+  </section>
 
-<section id="about">
-  <div class="section-label reveal">Introduction &amp; Summary</div>
-  <h2 class="section-title reveal">About Me</h2>
-  <div class="about-grid">
-    <div class="about-text reveal">
-      <p>Hi, I'm Aranshika Kar — a Computer Science & Engineering student specializing in Big Data Analytics at Lovely Professional University. I am driven by a genuine curiosity for technology and its power to solve real-world problems.</p>
-      <p>My journey spans building interactive web applications, OS simulators, data dashboards, and AI-powered tools. I believe in continuous growth — both technically and personally.</p>
-      <p>Beyond coding, I'm a passionate cultural participant, event organizer, and leader who has represented my college and state on multiple prestigious platforms.</p>
-    </div>
-    <div class="about-details reveal">
-      <div class="detail-row"><div class="detail-icon">🎓</div><div><div class="detail-label">Education</div><div class="detail-value">B.Tech CSE — LPU (Since Aug 2023)<br/>Specialization: Big Data Analytics | CGPA: 7.70</div></div></div>
-      <div class="detail-row"><div class="detail-icon">📍</div><div><div class="detail-label">Location</div><div class="detail-value">Phagwara, Punjab | Originally from Jabalpur, M.P.</div></div></div>
-      <div class="detail-row"><div class="detail-icon">📧</div><div><div class="detail-label">Email</div><div class="detail-value">kararanshika@gmail.com</div></div></div>
-      <div class="detail-row"><div class="detail-icon">📱</div><div><div class="detail-label">Mobile</div><div class="detail-value">+91-7440746454</div></div></div>
-    </div>
-  </div>
-</section>
-
-<section id="skills">
-  <div class="section-label reveal">Expertise</div>
-  <h2 class="section-title reveal">Skills &amp; Technologies</h2>
-  <div class="skills-grid">
-    <div class="skill-card reveal"><div class="skill-card-title">Programming Languages</div><div class="skill-tags"><span class="tag">C++</span><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">Java</span></div></div>
-    <div class="skill-card reveal"><div class="skill-card-title">Web Technologies</div><div class="skill-tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">React</span></div></div>
-    <div class="skill-card reveal"><div class="skill-card-title">Tools &amp; Platforms</div><div class="skill-tags"><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Power BI</span><span class="tag">IBM Cognos</span><span class="tag">Figma</span><span class="tag">GitHub</span></div></div>
-    <div class="skill-card reveal"><div class="skill-card-title">Soft Skills</div><div class="skill-tags"><span class="tag">Problem-Solving</span><span class="tag">Team Player</span><span class="tag">Leadership</span><span class="tag">Communication</span><span class="tag">Adaptability</span></div></div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="section-label reveal">Work</div>
-  <h2 class="section-title reveal">Projects</h2>
-  <div class="projects-grid">
-    <div class="project-card reveal">
-      <div class="project-period">Nov 2025 – Present</div>
-      <div class="project-title">Interior Designing Website</div>
-      <p class="project-desc">Developing a live website for an interior-designing startup with service details, portfolio showcase, and user-friendly navigation — to be deployed for real-world use.</p>
-      <div class="project-tools"><span class="project-tool">HTML</span><span class="project-tool">CSS</span><span class="project-tool">JavaScript</span><span class="project-tool">React</span><span class="project-tool">Figma</span><span class="project-tool">GitHub</span></div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-period">June – July 2025</div>
-      <div class="project-title">BinWise – Smart Waste Routing</div>
-      <p class="project-desc">Web-based prototype for a smart waste management system for the Jalandhar region. Detects full trash bins and suggests the shortest collection routes to improve municipal efficiency.</p>
-      <div class="project-tools"><span class="project-tool">HTML</span><span class="project-tool">CSS</span><span class="project-tool">JavaScript</span><span class="project-tool">Routing Logic</span><span class="project-tool">GitHub</span></div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-period">Feb – Mar 2025</div>
-      <div class="project-title">CPU Scheduling Simulator</div>
-      <p class="project-desc">Simulator demonstrating OS scheduling algorithms — FCFS, SJF, Priority, and Round Robin — with visual comparison of turnaround and waiting times.</p>
-      <div class="project-tools"><span class="project-tool">C++</span><span class="project-tool">Data Structures</span><span class="project-tool">OS Algorithms</span><span class="project-tool">VS Code</span></div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-period">Apr – May 2024</div>
-      <div class="project-title">Social Media Analytics Dashboard</div>
-      <p class="project-desc">Power BI dashboard analyzing engagement and usage patterns of YouTube and WhatsApp with interactive charts, dynamic filters, and performance insights.</p>
-      <div class="project-tools"><span class="project-tool">Power BI</span><span class="project-tool">Power Query</span><span class="project-tool">Excel/CSV</span></div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-period">Oct – Nov 2023</div>
-      <div class="project-title">Number Guessing Game</div>
-      <p class="project-desc">Interactive Python game where the system generates a random number and guides the user with hints. Built to strengthen logical thinking and Python fundamentals.</p>
-      <div class="project-tools"><span class="project-tool">Python</span><span class="project-tool">Random Module</span><span class="project-tool">VS Code</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="certifications">
-  <div class="section-label reveal">Credentials</div>
-  <h2 class="section-title reveal">Certifications &amp; Courses</h2>
-  <div class="cert-grid">
-    <div class="cert-item reveal"><div class="cert-icon">🤖</div><div><div class="cert-name">Master Generative AI &amp; Tools (ChatGPT &amp; more)</div><div class="cert-issuer">Infosys · Aug 2025</div></div></div>
-    <div class="cert-item reveal"><div class="cert-icon">⚙️</div><div><div class="cert-name">Build Gen AI Apps with No-Code Tools</div><div class="cert-issuer">Infosys · Aug 2025</div></div></div>
-    <div class="cert-item reveal"><div class="cert-icon">🐍</div><div><div class="cert-name">Introduction to Python</div><div class="cert-issuer">IBM · Mar 2025</div></div></div>
-    <div class="cert-item reveal"><div class="cert-icon">🗄️</div><div><div class="cert-name">RDBMS</div><div class="cert-issuer">IBM · Mar 2025</div></div></div>
-    <div class="cert-item reveal"><div class="cert-icon">☕</div><div><div class="cert-name">Java Programming</div><div class="cert-issuer">Neocolab · Jan – May 2025</div></div></div>
-    <div class="cert-item reveal"><div class="cert-icon">🧩</div><div><div class="cert-name">Data Structures &amp; Algorithms</div><div class="cert-issuer">Neocolab · Aug – Dec 2024</div></div></div>
-    <div class="cert-item reveal"><div class="cert-icon">🏆</div><div><div class="cert-name">Hackathon "BYTEBASH"</div><div class="cert-issuer">Oct 2023</div></div></div>
-  </div>
-</section>
-
-<section id="experience">
-  <div class="section-label reveal">Background</div>
-  <h2 class="section-title reveal">Training &amp; Experience</h2>
-  <div class="timeline">
-    <div class="timeline-item reveal">
-      <div class="timeline-period">June 2025 – July 2025</div>
-      <div class="timeline-title">Logic Building, Programming &amp; Data Structures</div>
-      <div class="timeline-org">Summer Training Program</div>
-      <div class="timeline-desc"><ul><li>Improved problem-solving and logic-building skills through hands-on exercises</li><li>Gained practical experience in C++ programming</li><li>Learned core DSA concepts: arrays, recursion, linked lists, stacks, queues, sorting algorithms</li></ul></div>
-    </div>
-    <div class="timeline-item reveal">
-      <div class="timeline-period">Since August 2023</div>
-      <div class="timeline-title">B.Tech CSE — Big Data Analytics Specialization</div>
-      <div class="timeline-org">Lovely Professional University, Phagwara, Punjab</div>
-      <div class="timeline-desc">Pursuing undergraduate degree with a specialization in Big Data Analytics. Actively engaged in real-world projects spanning web development, operating systems simulation, and data visualization.</div>
-    </div>
-  </div>
-</section>
-
-<section id="achievements">
-  <div class="section-label reveal">Recognition</div>
-  <h2 class="section-title reveal">Achievements</h2>
-  <div class="ach-grid">
-    <div class="ach-card reveal"><div class="ach-icon">🥇</div><div class="ach-title">Spectra Inter-School Competition — 1st Prize</div><div class="ach-detail">Represented CSE Department, performed two group dances, and led the department to win 1st Prize overall among 20+ departments.</div></div>
-    <div class="ach-card reveal"><div class="ach-icon">🥈</div><div class="ach-title">One India Cultural Fest — 2nd Prize (Mizoram)</div><div class="ach-detail">Participated and ranked 2nd among 20+ departments representing Mizoram.</div></div>
-    <div class="ach-card reveal"><div class="ach-icon">🥈</div><div class="ach-title">One India Cultural Fest — 2nd Prize (Madhya Pradesh)</div><div class="ach-detail">Represented home state and again secured 2nd Prize among 20+ departments.</div></div>
-    <div class="ach-card reveal"><div class="ach-icon">🏃</div><div class="ach-title">Night Marathon &amp; EDM Event Head</div><div class="ach-detail">Led Club20 to organize a Night Marathon and EDM event with 1000+ participants including national-level athletes.</div></div>
-    <div class="ach-card reveal"><div class="ach-icon">📱</div><div class="ach-title">Social Media Head — Club20</div><div class="ach-detail">Led a 15-member media team managing digital activities for a club of 60+ members.</div></div>
-    <div class="ach-card reveal"><div class="ach-icon">🎵</div><div class="ach-title">College EDM Night Organizer</div><div class="ach-detail">Organized an EDM Night featuring Elyzium and managed a 500+ audience event smoothly.</div></div>
-  </div>
-</section>
-
-<section id="education">
-  <div class="section-label reveal">Academic</div>
-  <h2 class="section-title reveal">Education</h2>
-  <div class="edu-grid">
-    <div class="edu-card reveal"><div class="edu-degree">B.Tech — Computer Science &amp; Engineering</div><div class="edu-school">Lovely Professional University, Phagwara, Punjab</div><div class="edu-year">Since August 2023 | Specialization: Big Data Analytics</div><span class="edu-score">CGPA: 7.70</span></div>
-    <div class="edu-card reveal"><div class="edu-degree">Intermediate (Class XII)</div><div class="edu-school">Satya Prakash Public School, Jabalpur</div><div class="edu-year">April 2022 – March 2023</div><span class="edu-score">79%</span></div>
-    <div class="edu-card reveal"><div class="edu-degree">Matriculation (Class X)</div><div class="edu-school">St. Aloysius Sr. Sec. School, Jabalpur</div><div class="edu-year">April 2020 – March 2021</div><span class="edu-score">94.6%</span></div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="section-label reveal">Say Hello</div>
-  <h2 class="section-title reveal">Contact</h2>
-  <div class="contact-wrapper">
-    <div class="reveal">
-      <p class="contact-intro">I'm always open to new opportunities, collaborations, and conversations. Feel free to reach out through any of the channels below.</p>
-      <div class="contact-links">
-        <a href="mailto:kararanshika@gmail.com" class="contact-link"><span class="contact-link-icon">✉️</span><span class="contact-link-text">kararanshika@gmail.com</span></a>
-        <a href="tel:+917440746454" class="contact-link"><span class="contact-link-icon">📞</span><span class="contact-link-text">+91-7440746454</span></a>
-        <a href="https://www.linkedin.com/in/aranshika-kar" target="_blank" class="contact-link"><span class="contact-link-icon">💼</span><span class="contact-link-text">linkedin.com/in/aranshika-kar</span></a>
-        <a href="https://github.com/aranshikakar" target="_blank" class="contact-link"><span class="contact-link-icon">🐙</span><span class="contact-link-text">github.com/aranshikakar</span></a>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    <div class="row">
+      <div class="image">
+        <img draggable="false" class="tilt" src="image.jpeg" alt="Profile Image">
+      </div>
+      <div class="content">
+        <h3>I'm Aranshika Kar</h3>
+        <span class="tag"
+          style="display:inline-block; font-size:1.6rem; color:#011aff; margin-bottom:1rem; font-weight:600;">Developer
+          & Data Enthusiast</span>
+        <p>
+          Hi, I'm Aranshika Kar — a Computer Science & Engineering student specializing in Big Data Analytics at Lovely
+          Professional University. I am driven by a genuine curiosity for technology and its power to solve real-world
+          problems. My journey spans building interactive web applications, OS simulators, data dashboards, and
+          AI-powered tools. I believe in continuous growth — both technically and personally. Beyond coding, I'm a
+          passionate cultural participant, event organizer, and leader who has represented my college and state on
+          multiple prestigious platforms.
+        </p>
+        <div class="box-container" style="margin-top:2rem;">
+          <div class="box">
+            <p><span>Email:</span> kararanshika@gmail.com</p>
+            <p><span>Phone:</span> +91-7440746454</p>
+            <p><span>Location:</span> Phagwara, Punjab | Origin: Jabalpur, M.P.</p>
+            <p><span>Education:</span> LPU, B.Tech CSE (Current)</p>
+          </div>
+        </div>
+        <div class="resumebtn">
+          <a href="CV.pdf" download class="btn"><span>Download CV</span> <i class="fas fa-chevron-right"></i></a>
+        </div>
       </div>
     </div>
-    <div class="reveal">
-      <div class="contact-form">
-        <input type="text" class="form-input" placeholder="Your Name"/>
-        <input type="email" class="form-input" placeholder="Your Email"/>
-        <textarea class="form-textarea" placeholder="Your Message"></textarea>
-        <button class="btn-primary" style="border:none;cursor:pointer;text-align:center;font-family:inherit;">Send Message</button>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Expertise</span></h2>
+    <div class="container">
+      <div class="row" id="skillsContainer">
+        <div class="bar">
+          <div class="info"><i class="fab fa-cuttlefish" style="color: #00599C;"></i><span>C++</span></div>
+        </div>
+        <div class="bar">
+          <div class="info"><i class="fab fa-python" style="color: #FFD43B;"></i><span>Python</span></div>
+        </div>
+        <div class="bar">
+          <div class="info"><i class="fab fa-js" style="color: #F7DF1E;"></i><span>JavaScript</span></div>
+        </div>
+        <div class="bar">
+          <div class="info"><i class="fab fa-java" style="color: #F89820;"></i><span>Java</span></div>
+        </div>
+        <div class="bar">
+          <div class="info"><i class="fab fa-html5" style="color: #E34F26;"></i><span>HTML5</span></div>
+        </div>
+        <div class="bar">
+          <div class="info"><i class="fab fa-css3-alt" style="color: #1572B6;"></i><span>CSS3</span></div>
+        </div>
+        <div class="bar">
+          <div class="info"><i class="fab fa-react" style="color: #61DAFB;"></i><span>React</span></div>
+        </div>
+        <div class="bar">
+          <div class="info"><i class="fas fa-database" style="color: #336791;"></i><span>DBs</span></div>
+        </div>
+        <div class="bar">
+          <div class="info"><i class="fas fa-chart-bar" style="color: #F2C811;"></i><span>Power BI</span></div>
+        </div>
+        <div class="bar">
+          <div class="info"><i class="fab fa-figma" style="color: #F24E1E;"></i><span>Figma</span></div>
+        </div>
+        <div class="bar">
+          <div class="info"><i class="fab fa-github" style="color: #ffffff;"></i><span>GitHub</span></div>
+        </div>
+        <div class="bar">
+          <div class="info"><i class="fas fa-users" style="color: #00d9ff;"></i><span>Team</span></div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  <div class="footer-text">© 2025 <span class="footer-name">Aranshika Kar</span>. All rights reserved.</div>
-  <div class="footer-text">B.Tech CSE · LPU · Big Data Analytics</div>
-</footer>
+  <!-- Projects Section -->
+  <section class="work" id="projects">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+    <div class="box-container">
 
-<script src="script.js"></script>
+      <div class="box tilt"
+        style="flex: 1 1 350px; background:#fff; border-radius:1rem; padding:2rem; margin:1rem; display:flex; flex-direction:column;">
+        <div class="tag" style="margin-bottom:1.5rem; border-bottom:1px solid #ddd; padding-bottom:1rem;">
+          <h3 style="font-size:2rem; color:#002057;">Interior Designing Website</h3>
+          <span style="display:block; font-size:1.2rem; color:#ff7b00; margin-top:0.5rem; font-weight:600;">Nov 2025 –
+            Present</span>
+        </div>
+        <div class="desc" style="font-size:1.4rem; color:#333; line-height:1.6; flex-grow:1;">
+          <p>Developing a live website for an interior-designing startup with service details, portfolio showcase, and
+            user-friendly navigation — to be deployed for real-world use.</p>
+          <p
+            style="margin-top:1.5rem; font-size:1.2rem; color:#fff; background:#011aff; display:inline-block; padding:0.5rem 1rem; border-radius:3rem;">
+            HTML, CSS, JS, React, Figma</p>
+        </div>
+      </div>
+
+      <div class="box tilt"
+        style="flex: 1 1 350px; background:#fff; border-radius:1rem; padding:2rem; margin:1rem; display:flex; flex-direction:column;">
+        <div class="tag" style="margin-bottom:1.5rem; border-bottom:1px solid #ddd; padding-bottom:1rem;">
+          <h3 style="font-size:2rem; color:#002057;">BinWise – Smart Waste</h3>
+          <span style="display:block; font-size:1.2rem; color:#ff7b00; margin-top:0.5rem; font-weight:600;">June – July
+            2025</span>
+        </div>
+        <div class="desc" style="font-size:1.4rem; color:#333; line-height:1.6; flex-grow:1;">
+          <p>Smart waste management prototype for Jalandhar. Detects full bins and suggests optimal collection routes to
+            improve efficiency.</p>
+          <p
+            style="margin-top:1.5rem; font-size:1.2rem; color:#fff; background:#011aff; display:inline-block; padding:0.5rem 1rem; border-radius:3rem;">
+            HTML, CSS, JS, Routing Logic</p>
+        </div>
+      </div>
+
+      <div class="box tilt"
+        style="flex: 1 1 350px; background:#fff; border-radius:1rem; padding:2rem; margin:1rem; display:flex; flex-direction:column;">
+        <div class="tag" style="margin-bottom:1.5rem; border-bottom:1px solid #ddd; padding-bottom:1rem;">
+          <h3 style="font-size:2rem; color:#002057;">CPU Scheduling Sim</h3>
+          <span style="display:block; font-size:1.2rem; color:#ff7b00; margin-top:0.5rem; font-weight:600;">Feb – Mar
+            2025</span>
+        </div>
+        <div class="desc" style="font-size:1.4rem; color:#333; line-height:1.6; flex-grow:1;">
+          <p>Simulator demonstrating OS scheduling algorithms — FCFS, SJF, Priority, and Round Robin — with visual
+            comparison of turnaround and waiting times.</p>
+          <p
+            style="margin-top:1.5rem; font-size:1.2rem; color:#fff; background:#011aff; display:inline-block; padding:0.5rem 1rem; border-radius:3rem;">
+            C++, DSA, OS Algorithms</p>
+        </div>
+      </div>
+
+      <div class="box tilt"
+        style="flex: 1 1 350px; background:#fff; border-radius:1rem; padding:2rem; margin:1rem; display:flex; flex-direction:column;">
+        <div class="tag" style="margin-bottom:1.5rem; border-bottom:1px solid #ddd; padding-bottom:1rem;">
+          <h3 style="font-size:2rem; color:#002057;">Social Media Dashboard</h3>
+          <span style="display:block; font-size:1.2rem; color:#ff7b00; margin-top:0.5rem; font-weight:600;">Apr – May
+            2024</span>
+        </div>
+        <div class="desc" style="font-size:1.4rem; color:#333; line-height:1.6; flex-grow:1;">
+          <p>Power BI dashboard analyzing engagement and usage patterns of YouTube and WhatsApp with interactive charts,
+            dynamic filters, and performance insights.</p>
+          <p
+            style="margin-top:1.5rem; font-size:1.2rem; color:#fff; background:#011aff; display:inline-block; padding:0.5rem 1rem; border-radius:3rem;">
+            Power BI, Power Query, Excel</p>
+        </div>
+      </div>
+
+      <div class="box tilt"
+        style="flex: 1 1 350px; background:#fff; border-radius:1rem; padding:2rem; margin:1rem; display:flex; flex-direction:column;">
+        <div class="tag" style="margin-bottom:1.5rem; border-bottom:1px solid #ddd; padding-bottom:1rem;">
+          <h3 style="font-size:2rem; color:#002057;">Number Guessing Game</h3>
+          <span style="display:block; font-size:1.2rem; color:#ff7b00; margin-top:0.5rem; font-weight:600;">Oct – Nov
+            2023</span>
+        </div>
+        <div class="desc" style="font-size:1.4rem; color:#333; line-height:1.6; flex-grow:1;">
+          <p>Interactive Python game where the system generates a random number and guides the user with hints. Built to
+            strengthen logical thinking and Python fundamentals.</p>
+          <p
+            style="margin-top:1.5rem; font-size:1.2rem; color:#fff; background:#011aff; display:inline-block; padding:0.5rem 1rem; border-radius:3rem;">
+            Python, Random Module</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education" id="education">
+    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+    <div class="box-container">
+      <div class="box tilt" style="width:100%; max-width:900px; justify-content:flex-start; margin-bottom: 2rem;">
+        <div class="content" style="flex: 1 1 100%;">
+          <h3>Bachelor of Technology (CSE)</h3>
+          <p style="color:#011aff; font-weight:600; margin-bottom:1rem;">Lovely Professional University, Phagwara</p>
+          <h4>Since August 2023 | Pursuing</h4>
+          <p style="margin-top:1rem;">Specialization: Big Data Analytics | CGPA: 7.99</p>
+        </div>
+      </div>
+      <div class="box tilt" style="width:100%; max-width:900px; justify-content:flex-start; margin-bottom: 2rem;">
+        <div class="content" style="flex: 1 1 100%;">
+          <h3>Intermediate (Class XII)</h3>
+          <p style="color:#011aff; font-weight:600; margin-bottom:1rem;">Satya Prakash Public School, Jabalpur</p>
+          <h4>April 2022 – March 2023 | Completed | 79%</h4>
+        </div>
+      </div>
+      <div class="box tilt" style="width:100%; max-width:900px; justify-content:flex-start; margin-bottom: 2rem;">
+        <div class="content" style="flex: 1 1 100%;">
+          <h3>Matriculation (Class X)</h3>
+          <p style="color:#011aff; font-weight:600; margin-bottom:1rem;">St. Aloysius Sr. Sec. School, Jabalpur</p>
+          <h4>April 2020 – March 2021 | Completed | 94.6%</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Certifications Section -->
+  <section class="education certs-section" id="certifications" style="background: #f7f7f7;">
+    <h1 class="heading"><i class="fas fa-certificate"></i> Certifications & <span>Courses</span></h1>
+    <div class="box-container"
+      style="flex-direction:row; flex-wrap:wrap; gap: 2rem; justify-content: center; margin-top:3rem;">
+
+      <div class="box tilt" style="flex: 1 1 300px; max-width: 400px; background:#fff; margin-top:1rem; padding:3rem;">
+        <div class="content" style="text-align: center; display: block;">
+          <i class="fas fa-robot" style="font-size: 4rem; color: #ff7b00; margin-bottom: 1.5rem;"></i>
+          <h3 style="font-size: 2rem; margin-bottom: 1.5rem; text-align:center; min-height:60px;">Master Generative AI &
+            Tools</h3>
+          <p style="margin:0; text-align:center; font-weight:600; color:#555;">Infosys · Aug 2025</p>
+        </div>
+      </div>
+
+      <div class="box tilt" style="flex: 1 1 300px; max-width: 400px; background:#fff; margin-top:1rem; padding:3rem;">
+        <div class="content" style="text-align: center; display: block;">
+          <i class="fas fa-cogs" style="font-size: 4rem; color: #ff7b00; margin-bottom: 1.5rem;"></i>
+          <h3 style="font-size: 2rem; margin-bottom: 1.5rem; text-align:center; min-height:60px;">Build Gen AI Apps</h3>
+          <p style="margin:0; text-align:center; font-weight:600; color:#555;">Infosys · Aug 2025</p>
+        </div>
+      </div>
+
+      <div class="box tilt" style="flex: 1 1 300px; max-width: 400px; background:#fff; margin-top:1rem; padding:3rem;">
+        <div class="content" style="text-align: center; display: block;">
+          <i class="fab fa-python" style="font-size: 4rem; color: #ff7b00; margin-bottom: 1.5rem;"></i>
+          <h3 style="font-size: 2rem; margin-bottom: 1.5rem; text-align:center; min-height:60px;">Introduction to Python
+          </h3>
+          <p style="margin:0; text-align:center; font-weight:600; color:#555;">IBM · Mar 2025</p>
+        </div>
+      </div>
+
+      <div class="box tilt" style="flex: 1 1 300px; max-width: 400px; background:#fff; margin-top:1rem; padding:3rem;">
+        <div class="content" style="text-align: center; display: block;">
+          <i class="fas fa-database" style="font-size: 4rem; color: #ff7b00; margin-bottom: 1.5rem;"></i>
+          <h3 style="font-size: 2rem; margin-bottom: 1.5rem; text-align:center; min-height:60px;">RDBMS</h3>
+          <p style="margin:0; text-align:center; font-weight:600; color:#555;">IBM · Mar 2025</p>
+        </div>
+      </div>
+
+      <div class="box tilt" style="flex: 1 1 300px; max-width: 400px; background:#fff; margin-top:1rem; padding:3rem;">
+        <div class="content" style="text-align: center; display: block;">
+          <i class="fab fa-java" style="font-size: 4rem; color: #ff7b00; margin-bottom: 1.5rem;"></i>
+          <h3 style="font-size: 2rem; margin-bottom: 1.5rem; text-align:center; min-height:60px;">Java Programming</h3>
+          <p style="margin:0; text-align:center; font-weight:600; color:#555;">Neocolab · Jan-May 2025</p>
+        </div>
+      </div>
+
+      <div class="box tilt" style="flex: 1 1 300px; max-width: 400px; background:#fff; margin-top:1rem; padding:3rem;">
+        <div class="content" style="text-align: center; display: block;">
+          <i class="fas fa-project-diagram" style="font-size: 4rem; color: #ff7b00; margin-bottom: 1.5rem;"></i>
+          <h3 style="font-size: 2rem; margin-bottom: 1.5rem; text-align:center; min-height:60px;">DSA</h3>
+          <p style="margin:0; text-align:center; font-weight:600; color:#555;">Neocolab · Aug-Dec 2024</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Training Section -->
+  <section class="experience" id="training" style="background: #e5ecfb; padding-bottom: 5rem;">
+    <h2 class="heading"><i class="fas fa-briefcase"></i> Training & <span>Experience</span></h2>
+    <div class="timeline" style="margin-top: 4rem;">
+      <div class="container left tilt">
+        <div class="content"
+          style="background:#fff; padding:3rem; border-radius:0.5rem; box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);">
+          <div class="tag" style="padding-bottom:1rem; border-bottom:1px solid #ddd; margin-bottom:1.5rem;">
+            <h2 style="font-size:2.2rem; color:#002057;">Freelance Web Developer</h2>
+            <span style="color:#ff7b00; font-size:1.5rem; font-weight:600; display:block; margin-top:0.5rem;">Nov 2025 –
+              Present</span>
+          </div>
+          <div class="desc" style="font-size:1.5rem; line-height:1.7;">
+            <h3 style="margin-bottom:1rem; color:#333;">Interior Designing Startup</h3>
+            <p>Developing a live website for an interior-designing startup with service details, portfolio showcase, and
+              user-friendly navigation. Built modern intuitive interfaces using React and Figma.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container right tilt">
+        <div class="content"
+          style="background:#fff; padding:3rem; border-radius:0.5rem; box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);">
+          <div class="tag" style="padding-bottom:1rem; border-bottom:1px solid #ddd; margin-bottom:1.5rem;">
+            <h2 style="font-size:2.2rem; color:#002057;">Summer Training Program</h2>
+            <span style="color:#ff7b00; font-size:1.5rem; font-weight:600; display:block; margin-top:0.5rem;">June 2025
+              – July 2025</span>
+          </div>
+          <div class="desc" style="font-size:1.5rem; line-height:1.7;">
+            <h3 style="margin-bottom:1rem; color:#333;">Logic Building, Programming & Data Structures</h3>
+            <p>Improved problem-solving and logic-building skills through hands-on exercises. Gained practical
+              experience in C++ programming. Learned core DSA concepts: arrays, recursion, linked lists, stacks, queues,
+              sorting algorithms.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container left tilt">
+        <div class="content"
+          style="background:#fff; padding:3rem; border-radius:0.5rem; box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);">
+          <div class="tag" style="padding-bottom:1rem; border-bottom:1px solid #ddd; margin-bottom:1.5rem;">
+            <h2 style="font-size:2.2rem; color:#002057;">Lovely Professional University</h2>
+            <span style="color:#ff7b00; font-size:1.5rem; font-weight:600; display:block; margin-top:0.5rem;">Since
+              August 2023</span>
+          </div>
+          <div class="desc" style="font-size:1.5rem; line-height:1.7;">
+            <h3 style="margin-bottom:1rem; color:#333;">B.Tech CSE — Big Data Analytics Specialization</h3>
+            <p>Pursuing undergraduate degree with a specialization in Big Data Analytics. Actively engaged in real-world
+              projects spanning web development, operating systems simulation, and data visualization.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact" style="background: #f7f7f7;">
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+    <div class="container" style="display:flex; justify-content:center; align-items:center; min-height: 50vh;">
+      <div class="content"
+        style="background:#fff; padding:4rem; border-radius:1rem; box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1); width:100%; max-width:800px; text-align:center;">
+        <p style="font-size:1.8rem; margin-bottom: 3rem; color: #333;">I'm always open to new opportunities,
+          collaborations, and conversations. Feel free to reach out through any of the channels below.</p>
+        <div
+          style="display:flex; flex-direction:column; gap:2.5rem; font-size:1.8rem; align-items:flex-start; justify-content:center; width:max-content; margin:auto;">
+          <a href="mailto:kararanshika@gmail.com" style="color:#002057; font-weight:600;"><i class="fas fa-envelope"
+              style="color:#ff7b00; margin-right:1rem;"></i> kararanshika@gmail.com</a>
+          <a href="tel:+917440746454" style="color:#002057; font-weight:600;"><i class="fas fa-phone-alt"
+              style="color:#ff7b00; margin-right:1rem;"></i> +91-7440746454</a>
+          <a href="https://www.linkedin.com/in/aranshika-kar" target="_blank" style="color:#002057; font-weight:600;"><i
+              class="fab fa-linkedin" style="color:#ff7b00; margin-right:1rem;"></i> linkedin.com/in/aranshika-kar</a>
+          <a href="https://github.com/aranshikakar" target="_blank" style="color:#002057; font-weight:600;"><i
+              class="fab fa-github" style="color:#ff7b00; margin-right:1rem;"></i> github.com/aranshikakar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <section class="footer" style="min-height:auto; background: #000021;">
+    <div class="box-container" style="margin:0;">
+      <div class="box" style="text-align:center; padding: 2rem;">
+        <h3 style="color:#fff; font-size:2rem; margin-bottom:1rem;">Aranshika's Portfolio</h3>
+        <p style="color:#aaa; font-size:1.5rem;">© 2025 Aranshika Kar. B.Tech CSE · LPU · Big Data Analytics</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- scroll top btn -->
+  <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"
+    style="position:fixed; bottom:20px; right:20px; font-size:2rem; border-radius:50%; background:#002057; color:#fff; width:45px; height:45px; text-align:center; line-height:45px; visibility:hidden; opacity:0; z-index:1000; box-shadow:0 0.5rem 1rem rgba(0,0,0,0.3); transition:0.3s;"></a>
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+  <script src="script.js"></script>
+
 </body>
+
 </html>
